@@ -1,0 +1,391 @@
+#operators in python
+
+#1 Arithmetic operators
+'''
+#'+,-,,/,//,%,*'
+'''
+
+#2 relational operators
+#'<,>,<=,>=,==,!= -->boolean type'
+'''
+print(3<4,5<0.1)
+print(3>4,5>0.1)
+print(3<=4,4<=4,5<0.1)
+print(3>4,4>=4,5>0.1)
+print('hai'=='hai','hai'=='hi')
+print('hai'!='hai','hai'!='hi')
+'''
+
+#3 Logical operators
+#'or,and,not'
+'''
+print(45<45 or 'hey'=='hey')
+print(45<45 or 'hey'!='hey')
+
+print(45<45 and 'hey'=='hey')
+print(45<45 and 'hey'!='hey')
+
+print( not[4,5]==[6,7])
+print( not[4,5]==[4,5])
+'''
+
+#4 Bitwise operators
+'''
+'1.or-->'
+n1=34
+n2=40
+n3=5
+print(n1|n2|n3)
+
+'2.and--> &'
+n1=34
+n2=40
+print(n1&n2)
+
+'3.not--> ~'
+print(34,-40)
+
+'4.xor-->^'
+'same numbers --> 0 and different -->1'
+n4=45
+n5=40
+print(n4^n5)
+'''
+#5 Assignment operators
+
+
+#6 identity operators
+'''
+'is--> to check the address is same'
+print(10==10)
+n=10
+n1=20
+print(n is n1)
+
+'is not --> to check the address is different'
+
+n2 = 45
+n3 = 'hey'
+print(n2 is not n3)
+'''
+#7 membership operators
+'''
+'in'
+print('h' in 'hai', 'H' in 'hai')
+print('h' == 'hai')
+print('bye' in ['hai','hello','bye'])
+print('bye' in {'hai':3,'hello':45,'bye':4.5})
+
+'not in'
+
+print(45 not in{'hai':3,'hello':45,'bye':4.5})
+print('hai' not in{'hai':3,'hello':45,'bye':4.5})
+
+'''
+
+# DECISION MAKING
+# TYPES
+#1 IF CONDITION
+'''
+if True:
+ print('hai')
+
+if False:
+ print('hai')
+'''
+#---
+'''        
+if bool(0) or bool(1):
+ print('bye')
+'''
+'''
+n = input (""enter: ")
+if n:
+    print("data is present")
+    print("data is not present")
+          
+'''
+
+#2 IF-ELSE CONDITION
+'''
+n = input("enter: ")
+if n:
+ print('data is present')
+else:
+ print('data is not present')
+'''
+
+#3 NESTED IF-ELSE CONDITION
+'''
+s1 = 'A"is a letter"'
+l_ = {(4,5):(4:5)}
+print(l_)
+'''
+'''
+if True:
+    print('nested if')
+else: 
+    print('nested else')
+else:
+    print('main else')
+'''
+'''
+if False:
+   print('main if')
+   if False:
+'''
+#4.elif condition
+'''
+if True:
+  print('A')
+
+elif True:
+  print('B')
+
+elif False:
+   print('c')
+else:
+    print(False)
+'''
+'''
+num_=int(input("Enter a number: "))
+condition_=num_%2==0
+if condition_:
+   print('even number')
+else:
+   print('odd number') 
+
+'''
+'''
+char_=input("Enter a character: ")
+if char_in "aeiouAEIOU":
+ print(char_,'is a vowel')
+else:
+ print(char_,'is not a vowel')
+'''
+
+
+#Random
+#print(random.randint(1,10))
+#print(random.randit(50,60))
+#1.randint
+'''
+import random
+l_ = [4, 4.5, 12, 67]
+index_ = random.randint(0, len(l_)-1)
+print(l_[index_], "at the index ", index_)
+'''
+#2.choice
+'''
+import random
+places = [ 'goa', 'varakala', 'karnataka', 'ap' ]
+print ("let's visit", random.choice(places),)
+'''
+#program to get tail or head
+'''
+import random
+num_ = random.randint(0,1)
+if num_ == 0:
+    print('head')
+else:
+    print('tail')
+'''     
+# program to guess a number
+'''
+import random
+name = input("what is your name: ")
+print("hey", name, "let's start the game")
+computer_guess = random.choice((1,2,3,4,5,6,7,8,9,10))                    
+user_guess = int(input("Guess a number : 1"))
+print(computer_guess)
+
+if user_guess == computer_guess:
+   print("you win")
+elif user_guess < computer_guess:
+      print('Guess larger number')
+elif user_guess > computer_guess:
+      print('Guess lower number')
+else:
+    print('guess only numbers i the tuplpe')
+'''
+
+'''
+import random
+computer_items = random.choice(['scissor', 'rock', 'paper'])
+user_input = input("scissor or Rock or paper: ")
+print(computer_items)
+                               
+if computer_items == user_input:
+   print("draw")
+elif computer_items == 'scissor':
+    if user_inout == 'rock':
+       print(user_input, 'won rock hits scissor')  
+    else:
+       print(user_input, 'lost scissor cuts the paper')  
+        
+elif computer_items == 'rock':
+    if user_input == 'paper':
+        print('you won paper wrap the rock')
+    else:
+           print('you lost rock rock hits the scissor')
+else:
+    if user_input == 'scissor':
+        print('u lost')
+'''
+#LOOPING
+#1.WHILE LOOP
+#2.WHILE-ELSE LOOP
+#3.FOR LOOP
+#4.FOR-ELSE LOOP
+
+#1. WHILE LOOP
+# program to print the numbers from 1 to 5
+'''
+i = 1
+while i <= 5:
+      print(i)
+      i = i + 1
+'''
+# program to print the numbers from 1 to 5
+'''
+i = 5
+while i >= 1:
+      print(i)
+      i -= 1
+'''
+# write a program to print "bangalore" 10 times
+'''
+j = 1
+while j <= 10:
+    print('bangalore', j)
+    j += 1
+'''
+# write a program to print your name n times
+'''
+name = input("what is your name ? ")
+n = int(input("Give me the count ? "))
+i = 1
+while i <= n:
+   print(name, i)
+   i += 1
+'''
+# program to square the numbers from start to end
+'''
+def square_numbers(start, end):
+   current  = start
+   while current <= end:
+      squared = current **2
+      print(f"The square of {current} is {squared}")
+'''
+'''
+start_num = int(input("Enter the starting number: "))
+end_num = int(input("Enter the starting number: "))
+while start_num <= end_num:
+   print(start_num * start_num, end ' ')
+'''   
+  #'without method -->append'
+'''
+start_num = int(input("Enter the starting number: "))
+end_num = int(input("Enter the starting number: "))
+l_ = []
+while start_num <= end_num:
+   l_ = 1 + [start_num * end_num]
+   start_num += 1
+print(l_)   
+'''
+# program to get the character and its indexes
+'''
+str_ = int(input("Enter a string : "))
+index_ = 0
+list_ =[]
+while index_ < len(str_):
+    list_.append(index_, str_[index_])
+    index_ += 1
+print(list_)                 
+'''
+# program to print nested list with character and its ascci value
+'''
+str_ = input("Enter a string : " )
+i = 0
+l_ =[]
+while i < len(str_):
+    l_ += [[str_[i], ord(str_[i])]]
+    i += 1
+print(l_)    
+'''   
+# program to get element and its length by taking the input from user
+
+#program to convert lower to upper and vice versa character
+#1.
+'''
+inp_ = input("enter :")
+if 'a' <= inp_ <= 'z':
+    print(ord(inp_))
+    print(ord(inp_)-32)
+    print(chr(ord(inp_)-32))
+elif 'A' <= inp_ <= 'Z':
+        print(chr(ord(inp_)+32))
+else:
+    primt('Enter a alphabet')
+'''
+#2.
+'''
+string_ = input("enter: ")
+index_ = 0
+new_str = ''
+while index_ < len(string_):
+    if 'a' <= string_[index_] <= 'z':
+        new_str += chr(ord(string_[index_])-32)
+    elif 'A' <= string_[index_] <= 'Z':
+        new_str += chr(ord(string_[index_])+32)
+    else:
+        new_str += string_[index_]
+    index_ += 1
+print(new_str)      
+'''         
+#reverse the string
+#1.
+'''
+inp_ = input("enter a string : ")
+print(inp_[::-1])
+'''
+#2
+'''
+inp_ = input("enter a string : ")
+i = 0
+n_s = ''
+while i< len(inp_):
+    n_s = inp_[i] + n_s
+    i += 1
+print(n_s)
+'''
+###
+'''names = ['eve', 'james', 'bill', 'steve', 'mill', 'amul']
+dic_ = {}
+i = 0
+while i <len(names):
+    dic_[names[i][0]] = names[i]
+    i +=1
+print(dic_)
+'''
+##
+'''
+names = ['eve', 'james', 'bill', 'steve', 'mill', 'amul']
+dic_ = {}
+i = 0
+while i <len(names):
+    dic_[names[i]] = len(names[i])
+    i +=1
+print(dic_)     
+'''
+
+# program to get factorial of a number
+'''
+a_ = int(input("Enter a num: "))
+i = 1
+fact_ = 1
+while a_ >=i:              
+     fact_ = fact_ *i
+     i += 1
+print(f"Factorial of", a_, 'is' , fact_)              
+'''
